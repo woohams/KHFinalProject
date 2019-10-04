@@ -9,27 +9,35 @@
 
 	<link rel="stylesheet" href="resources/css/fullcalendar.css">
 	<link rel="stylesheet" href="resources/css/fullcalendar.min.css">
-    
-   <!--  <script src="resources/js/jquery.min.js"></script> -->
-   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-   <script src="resources/js/moment.min.js"></script>
-   <script src="resources/js/fullcalendar.js"></script>
-   <script src="resources/js/fullcalendar.min.js"></script>
-   <script src="resources/js/calendardemo.js"></script>
-    
+	<link rel="stylesheet" href="resources/css/main.css">
+
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  	<script src="resources/js/bootstrap.min.js"></script>
+  	<script src="resources/js/moment.min.js"></script>
+   	<script src="resources/js/fullcalendar.min.js"></script>
+   	<script src="resources/js/ko.js"></script>
+   	<script src="resources/js/select2.min.js"></script>
+   	<script src="resources/js/bootstrap-datetimepicker.min.js"></script>
    
-   <script type="text/javascript">
+   	<script type="text/javascript">
     	$(function(){
     		$("#calendar").fullCalendar({
     			
-    			
+    			header: {
+    		        left: 'prev,next today',
+    		        center: 'title',
+    		        right: 'month,agendaWeek,agendaDay'
+    		    }
     		});
     	});
     
     </script>
 <body>
 	
-	<div id="calendar"></div>
+	<div id="wrapper">
+		<div id="loading"></div>
+		<div id="calendar"></div>
+	</div>
 
 </body>
 </html>

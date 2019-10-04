@@ -72,5 +72,14 @@ public class CalendarDto {
 	public void setCalendar_end(Date calendar_end) {
 		this.calendar_end = calendar_end;
 	}
+
+	@Override
+	public String toString() {
+		return "CalendarDto [calendar_seq=" + calendar_seq + ", id=" + id + ", calendar_title=" + calendar_title
+				+ ", calendar_content=" + calendar_content + ", calendar_start=" + calendar_start + ", calendar_end="
+				+ calendar_end + "]";
+	}
+	
+	
 	
 }

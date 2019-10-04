@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="calendar">
+	<select id="selectList" resultType="calendarDto">
+		SELECT CALENDAR_SEQ, ID, CALENDAR_CATEGORY, CALENDAR_TITLE, CALENDAR_CONTENT, 
+		CALENDAR_BACKGROUNDCOLOR, CALENDAR_START, CALENDAR_END, CALENDAR_ALLDAY
+		FROM CALENDAR
+	</select>
 
 </mapper>
