@@ -1,0 +1,15 @@
+footer {
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+.footer_img{
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+footer p{
+    margin: 0px;
+}
