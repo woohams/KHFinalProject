@@ -7,12 +7,21 @@
 	<div class="TE_header">
 		<div class="TE_header_left">
 			<p><a href="./home.do">Talent Education</a></p>
-			<img alt="" src="resources/images/sample.jpg">
+			<img alt="" src="resources/images/logo.png">
 		</div>
 		
 		<div class="TE_header_right">
-			<p><a href="">LOGIN</a></p>
-			<img id="TE_header_menu" alt="" src="resources/images/sample.jpg">
+			<sec:authorize access="isAuthenticated()">
+				<form id="logout" action='./logout' method="post">
+					<input type="hidden" name="${_csrf.parameterName }" value="${_csrf.token }">
+					
+				</form>
+				<p><a onclick="$('#logout').submit();">LOGOUT</a></p>
+			</sec:authorize>
+			<sec:authorize access="isAnonymous()">
+				<p><a href="./loginform.do">LOGIN</a></p>
+			</sec:authorize>
+			<img id="TE_header_menu" alt="" src="resources/images/menu.jpg">
 		</div>
 		
 	</div>
