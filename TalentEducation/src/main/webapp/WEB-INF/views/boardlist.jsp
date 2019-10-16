@@ -20,9 +20,10 @@
 					<option value="오프라인">오프라인</option>
 				</select>
 			</div>
+			
 			<div id="boards">
 				<div class="board">
-				
+					<input type="hidden" name="boardNo" value="1">
 					<div class="board_img">
 						
 						<div class="tag_box vod">VOD</div>
@@ -31,7 +32,7 @@
 						<p class="board_title">대충맛</p>
 						<div>
 							<p>★★★☆☆</p>
-							<a href="">글쓴이</a>
+							<a href="">홍준성</a>
 						</div>
 					</div>
 				</div>
